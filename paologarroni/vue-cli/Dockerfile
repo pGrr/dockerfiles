@@ -1,4 +1,4 @@
-# docker run -it -v $(pwd):/code -p 8080:8080 paologarroni/vue-cli
+docker run -it -v $(pwd):/code -p 8080:8080 -p 8000:8000 paologarroni/vue-cli
 
 FROM ubuntu
 
