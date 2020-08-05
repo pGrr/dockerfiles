@@ -1,4 +1,4 @@
-# docker run -it -v $(pwd):/code -p 8080:8080 paologarroni/vue-cli
+# docker run -it paologarroni/nodejs
 
 FROM ubuntu
 
@@ -7,7 +7,7 @@ RUN apt-get upgrade -y
 RUN apt-get install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs
-RUN npm install -y -g @vue/cli @vue/cli-service-global
 
-WORKDIR /code
+WORKDIR /
 CMD bash
+ 
