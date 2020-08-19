@@ -2,9 +2,10 @@
 
 FROM paologarroni/nodejs
 
-RUN npm install --global webpack
-RUN npm install --global webpack-cli
-
 WORKDIR /code/
+
+RUN npm install -y -g webpack
+RUN npm install -y -g webpack-cli
+
 CMD bash
  

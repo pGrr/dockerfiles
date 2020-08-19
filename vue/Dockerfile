@@ -2,7 +2,8 @@
 
 FROM paologarroni/nodejs
 
+WORKDIR /code
+
 RUN npm install -y -g @vue/cli @vue/cli-service-global
 
-WORKDIR /code
 CMD bash
